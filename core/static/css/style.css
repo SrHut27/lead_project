@@ -1,0 +1,102 @@
+body{
+    height: 100%;
+    background-color: #27345f;
+    opacity: 1;
+}
+
+#container_primary{
+    border-radius: 3%;
+    box-shadow: 2px 5px 5px 2px rgba(0, 0, 0, 0.726);
+    background-color: #525666;
+   margin: 70px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+}
+#container_left{
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+float: left;
+width: 50%;
+height: 100%;
+background-color: #456AE6;
+
+
+}
+
+#container_right{
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    float: right;
+    background-color: white;
+    color: aliceblue;
+    width: 50%;
+   
+    height: 100%;
+}
+
+.form{
+    margin: 5px;
+    height: 2rem;
+    width: 20rem;
+}
+.instrucao_formulario{
+margin-left: 1rem;
+color: #222633;
+}
+
+.h1_info{
+    margin-left: 1rem;
+    color: #06133D;
+    font-weight: bold;
+    font-family: 'Poppins';
+
+    
+
+}
+.text{
+    margin: 1rem;
+    color: white;
+    font-family: 'Poppins';
+
+}
+.lista{
+    margin: 0.5rem;
+    font-family: 'Poppins';
+    display: flex;
+
+}
+.input_container{
+
+    display: flex;
+    align-items: center;
+}
+#email_img{
+display: flex;
+width: 2rem;
+margin-left: 0.5rem;
+}
+
+#user_img{
+display: flex;
+width: 2rem;
+margin-left: 0.5rem;
+}
+#telefone_img{
+    display: flex;
+width: 2rem;
+margin-left: 0.5rem;
+}
+#seta_img{
+    display: flex;
+width: 1rem;
+}
+
+#formulario_h1{
+    font-family: 'Poppins';
+    text-align: center;
+    color: #222633;
+
+
+}

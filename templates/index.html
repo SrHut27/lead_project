@@ -1,8 +1,48 @@
 {% extends 'base.html' %}
-
-{% block 'tittle' %}
+{% load static %}
+{% block title %}
 <title>Index</title>
 {% endblock %}
 
-{% block 'content' %}
+{% block content %}
+<div id="container_primary">
+    <div id="container_left"> <h1 class="h1_info">Junte-se à Nossa Comunidade de Notícias Exclusivas!</h1>
+
+        <p class="text">Seja o primeiro a receber as notícias mais quentes e atualizações diretamente na sua caixa de entrada! Em nosso compromisso de mantê-lo informado sobre os assuntos mais relevantes, estamos oferecendo a você a oportunidade de se cadastrar para receber nossas newsletters. <br><br>
+        
+        Ao se inscrever, você terá acesso privilegiado a:</p>
+        
+        <ul>
+            <div class="lista"><img src="{% static 'img/setaicon.png' %}" id="seta_img" ><b>Manchetes de Última Hora</b></div><br><br>
+            
+            <div class="lista"><img src="{% static 'img/setaicon.png' %}" id="seta_img" ><b>Artigos Aprofundados</b></div> <br><br>
+            
+            <div class="lista"><img src="{% static 'img/setaicon.png' %}" id="seta_img" ><b>Eventos e Lançamentos</b> </div> <br><br>
+            
+            <div class="lista"><img src="{% static 'img/setaicon.png' %}" id="seta_img" ><b>Entrevistas e Perfil de Especialistas</b></div> <br><br>
+            
+            <div class="lista"><img src="{% static 'img/setaicon.png' %}" id="seta_img" ><b>Destaques Culturais e Entretenimento</b></div> <br><br>
+        </ul>
+        </div>
+    <div id="container_right">
+
+<form  method="post">
+    <h1 id="formulario_h1">Formulario</h1>
+    <h1 class="instrucao_formulario">Nome</h1>
+
+<div class="input_container"><input type="text" name="nome_usuario" id="" class="form" placeholder="Insira o seu nome completo..."><img src="{% static 'img/usericon.png' %}" id="user_img" >
+</div>
+
+<h1 class="instrucao_formulario">Email</h1>
+
+<div class="input_container"><input type="email" name="email_usuario" id="email" class="form" placeholder="Insira seu email..."><img src="{% static 'img/emailicon.png' %}" id="email_img" ></div>
+
+<h1 class="instrucao_formulario">Telefone</h1>
+
+<div class="input_container"><input type="number" name="telefone_usuario" id="" class="form" placeholder="Insira seu número de Telefone..."><img src="{% static 'img/telefoneicon.png' %}" id="telefone_img" ></div>
+
+
+</form>
+         </div>
+</div>
 {% endblock %}
