@@ -23,23 +23,28 @@
             
             <div class="lista"><img src="{% static 'img/setaicon.png' %}" id="seta_img" ><b>Destaques Culturais e Entretenimento</b></div> <br><br>
         </ul>
+        <img src="{% static 'img/newspaper.png' %}" id="newspaper_icon">
         </div>
     <div id="container_right">
 
 <form  method="post">
     <h1 id="formulario_h1">Formulario</h1>
-    <h1 class="instrucao_formulario">Nome</h1>
+<p class="instrucao_formulario_2" >- Preencha o formulario para podermos enviarmos notícias quentinhas para você. -</p>
 
-<div class="input_container"><input type="text" name="nome_usuario" id="" class="form" placeholder="Insira o seu nome completo..."><img src="{% static 'img/usericon.png' %}" id="user_img" >
+<div class="input_container"><h1 class="instrucao_formulario">Nome</h1><input type="text" name="nome_usuario" id="" class="form" placeholder="Insira o seu nome completo..."><img src="{% static 'img/usericon.png' %}" id="user_img" >
 </div>
 
-<h1 class="instrucao_formulario">Email</h1>
 
-<div class="input_container"><input type="email" name="email_usuario" id="email" class="form" placeholder="Insira seu email..."><img src="{% static 'img/emailicon.png' %}" id="email_img" ></div>
 
-<h1 class="instrucao_formulario">Telefone</h1>
+<div class="input_container"><h1 class="instrucao_formulario">Email</h1><input type="email" name="email_usuario" id="email" class="form" placeholder="Insira seu email..."><img src="{% static 'img/emailicon.png' %}" id="email_img" ></div>
 
-<div class="input_container"><input type="number" name="telefone_usuario" id="" class="form" placeholder="Insira seu número de Telefone..."><img src="{% static 'img/telefoneicon.png' %}" id="telefone_img" ></div>
+
+
+<div class="input_container"><h1 class="instrucao_formulario">Telefone</h1><input type="number" name="telefone_usuario" id="" class="form" placeholder="Insira seu número de Telefone..."><img src="{% static 'img/telefoneicon.png' %}" id="telefone_img" ></div>
+
+<p class="instrucao_formulario_2" >- Clique no botão "enviar" para enviar as respostas. -</p>
+
+<div class="input_container"><input type="submit" name="" id="enviar" placeholder="Enviar"></div>
 
 
 </form>

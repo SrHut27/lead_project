@@ -1,11 +1,11 @@
 body{
     height: 100%;
-    background-color: #27345f;
+    background-color: #EAEAEA;
     opacity: 1;
 }
 
 #container_primary{
-    border-radius: 3%;
+    border-radius: 2%;
     box-shadow: 2px 5px 5px 2px rgba(0, 0, 0, 0.726);
     background-color: #525666;
    margin: 70px;
@@ -13,6 +13,7 @@ body{
    justify-content: center;
    align-items: center;
    height: 100vh;
+   
 }
 #container_left{
     border-top-left-radius: 1rem;
@@ -21,8 +22,15 @@ float: left;
 width: 50%;
 height: 100%;
 background-color: #456AE6;
-
-
+margin: 0;
+justify-content: left;
+}
+ul{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    
+    padding: 0;
 }
 
 #container_right{
@@ -30,20 +38,23 @@ background-color: #456AE6;
     border-bottom-right-radius: 1rem;
     float: right;
     background-color: white;
-    color: aliceblue;
     width: 50%;
    
     height: 100%;
 }
 
-.form{
-    margin: 5px;
-    height: 2rem;
-    width: 20rem;
+.form {
+    width: 20rem; /* Definindo o mesmo tamanho para todos os inputs */
+    padding: 10px;
+    margin-bottom: 10px; /* Espaçamento entre os inputs */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
 }
 .instrucao_formulario{
 margin-left: 1rem;
-color: #222633;
+color: #332228;
+font-family: 'Poppins';
 }
 
 .h1_info{
@@ -59,6 +70,7 @@ color: #222633;
     margin: 1rem;
     color: white;
     font-family: 'Poppins';
+    font-size: 19px;
 
 }
 .lista{
@@ -67,9 +79,9 @@ color: #222633;
     display: flex;
 
 }
-.input_container{
-
+.input_container {
     display: flex;
+    flex-direction: column;
     align-items: center;
 }
 #email_img{
@@ -100,3 +112,76 @@ width: 1rem;
 
 
 }
+.instrucao_formulario_2 {
+    font-size: 1rem;
+    text-align: center;
+    color: #55555a;
+    font-family: 'Poppins';
+margin-top: 5rem;}
+input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #f5f5f580
+}
+input:focus {
+    outline: none;
+    border-color: #456AE6;
+    box-shadow: 0 0 5px #456AE6;
+}
+
+#enviar {
+    width: 10rem;
+    text-align: center;
+    padding: 10px;
+    margin: 3rem auto 10px;
+    background-color: #456AE6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    box-shadow: 1px 3px 3px 1px rgba(0, 0, 0, 0.726);
+}
+
+#enviar:hover {
+    background-color: #334a8f;
+}
+#rodape{
+    display: flex;
+}
+footer{
+    border-top: black 2px solid;
+    color: antiquewhite;
+    margin: 0;
+    background-color: #456AE6;
+align-items: center;
+
+}
+.text_footer{
+    padding: 10px;
+    text-align: center;
+    margin: 0;
+}
+a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Poppins';
+    transition: color 0.3s ease;
+    font-weight: bold;
+}
+a:hover {
+    color: black; 
+}
+.footer_icon{
+    width: 1rem;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+#newspaper_icon {
+    width: 10rem;
+    margin-left: 44%;
+}
+
+
