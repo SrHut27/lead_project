@@ -157,6 +157,7 @@ footer{
     margin: 0;
     background-color: #456AE6;
 align-items: center;
+text-align: center;
 
 }
 .text_footer{
@@ -182,6 +183,12 @@ a:hover {
 #newspaper_icon {
     width: 10rem;
     margin-left: 44%;
+}
+.github, .instagram, .linkedin {
+    display: inline-block;
+    margin-right: 10px;
+    align-items: center;
+    text-align: center;
 }
 
 
