@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     {% load static %}
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
 
@@ -14,9 +14,25 @@
 
 </head>
 <body>
-    <!-- NavBar -->
+<!-- NavBar -->
+    <nav class="navegacao">
+
+        <ul class="navegacao_lista">   
+
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Consultar Leads</a></li>      
+            <li><a href="#">Entre em contato</a></li>    
+            <li><a href="#">Sobre</a></li>     
+
+
+
+        </ul>
+        <img src="{% static 'img/newspaper.png' %}" alt="logo da empresa" width="40rem" class="img"> 
+
+    </nav>
+
     {% block content %}
-    {% endblock %}
+    {% endblock %} 
  <!-- Footer -->
  <div id="rodape"></div>
  <footer>
@@ -25,7 +41,7 @@
     <a href="https://github.com/Kaio-Gaspar" target="_blank"></a>
     <a href="https://github.com/SrHut27" target="_blank"><img src="{% static 'img/github.png' %}"  class="footer_icon">    Github Gabriel Freitas</p></a> </div> 
 
-<div class="instagram"><p class="text_footer"><a href="http://instagram.com/gabriel.27.freitas" target="_blank"><img src="{% static 'img/instagram.png' %}" class="footer_icon" >Instagram Gabriel Freitas</p></a></div>
+<div class="instagram"><p class="text_footer"><a href="https://www.linkedin.com/in/gabriel-ribeiro-de-freitas-1a24792b1/" target="_blank"><img src="{% static 'img/linkedin.png' %}" class="footer_icon" >Linkedin Gabriel Freitas</p></a></div>
 
 <div class="linkedin"><a href="https://www.linkedin.com/in/kaio-de-medeiros-gaspar-1b4496287/" target="_blank"><p class="text_footer"><img src="{% static 'img/linkedin.png' %}" class="footer_icon">Linkedin Kaio Gaspar</p></a></div>
 
